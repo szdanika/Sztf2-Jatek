@@ -12,5 +12,13 @@ namespace Jatek
         private int y;
         public int X { get { return x; } set { x = value; } }
         public int Y { get { return y; } set { y = value; } }
+        JatekTer ter;
+        public JatekElem(int x, int y, JatekTer ter)
+        {
+            this.x = x;
+            this.y = y;
+            this.ter = ter;
+            ter.Felvetel(this);
+        }
     }
 }

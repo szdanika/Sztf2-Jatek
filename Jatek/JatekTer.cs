@@ -35,7 +35,7 @@ namespace Jatek
             }
             elemN--;
         }//Megnezni
-        public JatekElem[] MegadottHelyenLevok(int x, int y, int tavolsag)
+        public JatekElem[] MegadottHelyenLevok(int x, int y, int tavolsag) // megnezni
         {
             JatekElem[] KozelbeLevok = new JatekElem[elemek.Length];
             int elemN = 0;
@@ -47,6 +47,10 @@ namespace Jatek
                 }
             }
             return KozelbeLevok;
+        }
+        public JatekElem[] MegadottHelyenLevok(int x, int y)
+        {
+            return MegadottHelyenLevok(x, y, 0);
         }
 
     }
